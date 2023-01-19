@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <style>
+        body{
+    padding: 50px;
+    margin: 0;
+
+}
+.cont{
+    width: 200px;
+    border: 10px solid #ddd;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 5px 15px 25px rgb(0, 0, 0, 0.3);
+}
+.wra{
+    width: 100%;
+    display: flex;
+    }
+
+img{
+    width: 100%;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0);}
+    25% { transform: translateX(0);}
+    30% { transform: translateX(-100%);}
+    50% { transform: translateX(-100%);}
+    55% { transform: translateX(-200%);}
+    75% { transform: translateX(-200%);}
+    80% { transform: translateX(-300%);}
+    100% { transform: translateX(-300%);}
+
+}
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="wra">
+            <img width="200px" src="1xg.jpg" alt="PC1">
+            <img width="200px" src="1xg (1).jpg" alt="PC2">
+            <img width="200px" src="1xg (2).jpg" alt="PC3">
+            <img width="200px" src="1xg (3).jpg" alt="PC4">
+        </div>
+    </div>
+    
+</body>
+</html>

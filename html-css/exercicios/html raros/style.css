@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@property --rotate {
+    sintax: <angle>;
+    initial value: 132deg;
+    inherits: false;
+}
+.root{
+    
+}

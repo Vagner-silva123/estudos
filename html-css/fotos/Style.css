@@ -1,0 +1,32 @@
+body{
+    background-color: darkgray;
+    padding: 50px;
+    margin: 0;
+
+}
+.cont{
+    width: 50px;
+    border: 10px solid rgb(125, 40, 40);
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 5px 15px 25px rgb(0, 0, 0, 0.3);
+}
+.wra{
+    width: 25%;
+    display: flex;
+}
+animation
+img{
+    width: 25%;
+}
+@keyframes slide {
+    0% { transform: translateX(0);}
+    25% { transform: translateX(0);}
+    30% { transform: translateX(-100%);}
+    50% { transform: translateX(-100%);}
+    55% { transform: translateX(-200%);}
+    75% { transform: translateX(-200%);}
+    80% { transform: translateX(-300%);}
+    100% { transform: translateX(-300%);}
+
+}

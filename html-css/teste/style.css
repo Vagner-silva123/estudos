@@ -1,0 +1,37 @@
+@charset "UTF-8";
+body{
+    background-color: black;
+}
+#calculator {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #calculator .display {
+    height: 50px;
+    font-size: 36px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+  }
+  
+  #calculator .button {
+    width: 25%;
+    height: 50px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  #calculator .button:hover {
+    background-color: #ddd;
+  }
+  
+  #calculator .button.operator {
+    background-color: #f9c;
+  }
+  
+  #calculator .button.equal {
+    background-color: #f90;
+  }
+  
