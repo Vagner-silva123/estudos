@@ -13,13 +13,25 @@
             width: 500px;
             border-collapse: collapse;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
         tr,th,td{
             border: 1px solid black;
             padding: 10px;
         }
-        thead{
+        thead,tfoot{
             background-color: gray;
             color: white;
+        }
+        td.num{
+            text-align: right;
         }
     </style>
 </head>
@@ -35,24 +47,35 @@
          TR,TD,TH
     -->
     <table>
+        <caption>População de Unidades Federativas</caption>
         <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
-            <th>Censo</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
+            <th scope="col" style="width: 90px;">Censo</th>
 
         </tr>
         </thead>
         <tbody>
         <tr>
             <th>São Paulo</th>
-            <th>41 262 199</th>
-            <th>46 024 937</th>
+            <td class="num">41 262 199</td>
+            <td class="num">46 024 937</td>
+        </tr>
+        <tr>
+            <th>Minas Gerais</th>
+            <td class="num">19 597 330</td>
+            <td class="num">20 732 660</td>
+        </tr>
+        <tr>
+            <th>Rio de Janeiro</th>
+            <td class="num">15 989 929</td>
+            <td class="num">16 615 526</td>
         </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <th>Soma de tudo</th>
                 <td>Papai Noel</td>
             </tr>
