@@ -1,17 +1,23 @@
 @charset "UTF-8";
-*{
-    margin: 0px;
-    padding: 0px;
-}
+
+    
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
 :root{
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
 }
+
+
 html,body{
-    background-color: darkgray;
+    background-color: rgba(169, 169, 169, 0.267);
     min-height: 100vh;
+    font-family: var(--fonte1);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2em;
 }
 header{
     background-color: black;
@@ -21,6 +27,8 @@ header{
 header>h1{
 padding-top: 50px;
 font-variant: small-caps;
+font-family: var(--fonte2);
+font-size: 20vh;
 
 }
 header>p{
@@ -43,20 +51,42 @@ section{
     margin-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+}
+section>p{
+    padding-bottom: 2em;
+    
 }
 section.normal{
     background-color: white;
     color: black;
-    
+    margin-bottom: auto;
+   
 }
 section.imagem{
-    background-color: rgb(50, 50, 50);
+    background-color: rgba(50, 50, 50, 0.187);
     color: white;
+    margin-bottom: auto;
+    box-shadow: 6px 6px 13px 0px black;
+    background-attachment: fixed;
+}
+section#img01{
+background-image: url(../desafio12/imagens/background001.jpg);
+background-position: right center;
+background-size: cover;
+}
+section#img02{
+background-image: url(../desafio12/imagens/background002.jpg);
+background-position: right center;
+background-size: cover;
 }
 
     section.imagem > p{
-        width: 400px;
-        background-color: black;
+     display: inline-block;
+     padding: 5px;
+     background-color: rgba(0, 0, 0, 0.249);
+     margin-bottom: 5px;
+     text-shadow: 1px 1px 0px black;
     }
     
 footer{
