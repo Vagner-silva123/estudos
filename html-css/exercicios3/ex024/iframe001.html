@@ -5,11 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <style>
+        body{
+            text-align: center;
+            background-color: bisque;
+
+        }
+        iframe{
+            height: 400px;
+            width: 400px;
+            border-color: black;
+        }
+        div#box{
+            background-color: white;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            font-family: 'Love Ya Like A Sister', cursive;
+            font-size: 4.0em;
+            height: 300px;
+            width: 300px;
+            border-radius: 50% 50% 0px 0px;
+            transform: rotate(150px);
+
+        }
+        div#box:hover{
+            background-color: rgb(211, 86, 111);
+            color: white;
+
+        }
+    </style>
 </head>
 <body>
     <h1>testando o uso do Iframe</h1>
-    <p>Acessando o site do <iframe src="https://cursoemvideo.com" frameborder="0"></iframe> para aprender a programar</p>
-    <p>Acessando o site do <iframe src="www.google.com.br" frameborder="0"></iframe>Google.</p>
+    <p>Acessando o site do <iframe src="https://cursoemvideo.com" frameborder="1"></iframe> para aprender a programar</p>
+    <p>Acessando o site do <iframe src="www.google.com.br" frameborder="1"></iframe><a href="www.google.com.br" target="_blank">google</a>
+        Infelizmente o site não é compativel
+</p>
+<p>
+    O repositório do Guanabara
+    <!--
+        Por padrão, um iframe tem 300px x 150px
+    -->
+    <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500px"
+    width="500px" scolling="no"></iframe>
+    também é bem legal
+</p>
+<div id="box">Eu</div>
+<div id="box">te</div>
+<div id="box">amo!!!</div>
     
 </body>
 </html>
