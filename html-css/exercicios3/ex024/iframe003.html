@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        @font-face{
+            font-family:"bolo" ;
+            src: url("fonte/Cream\ Cake.otf"); format ("truetype");
+            font-weight: normal;
+            font-style: normal;}
+        body{
+            background-color: black;
+            color: white;
+        }
+        h1{
+            color: rgb(193, 92, 92);
+            text-align: center;
+            display: block;
+            margin: auto;
+            background-image: linear-gradient( to right, blue, green);
+            font-family: bolo;
+            font-size: 4.0em;
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid white;
+        }
+        a{
+            color:white;
+
+        }
+        a:hover{
+            background-color: green;
+            color:aliceblue
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi quia ullam nihil sapiente unde perspiciatis deleniti reprehenderit molestias consequatur, inventore hic iure suscipit tempora nobis natus dolorem beatae aspernatur deserunt!
+    </p>
+    <ul>
+        <li><a href="paginas extras/pagina001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas extras/pagina002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas extras/pagina003.html" target="frame">Terceira página</a></li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quaerat animi facilis iste sed natus quae impedit, culpa quam, veritatis, totam quis mollitia saepe cumque pariatur alias cum sapiente
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus laboriosam incidunt enim ad aliquam, maiores deserunt fugit voluptatum sunt illo doloribus quod. Voluptate dolor, exercitationem hic iste eum alias natus!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sed alias beatae reiciendis non sequi laborum laboriosam nostrum consequuntur iste? Reprehenderit deserunt architecto illum, numquam fugiat eum tempore a nam.</p>
+<iframe id="tela" name="frame" src="" >
+    <p>Infelizmente seu navegador não é compativel com isso.</p>
+</iframe>
+<p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quaerat animi facilis iste sed natus quae impedit, culpa quam, veritatis, totam quis mollitia saepe cumque pariatur alias cum sapiente
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus laboriosam incidunt enim ad aliquam, maiores deserunt fugit voluptatum sunt illo doloribus quod. Voluptate dolor, exercitationem hic iste eum alias natus!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sed alias beatae reiciendis non sequi laborum laboriosam nostrum consequuntur iste? Reprehenderit deserunt architecto illum, numquam fugiat eum tempore a nam.</p>
+
+
+    
+</body>
+</html>
