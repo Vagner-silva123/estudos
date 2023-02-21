@@ -8,19 +8,23 @@
 </head>
 <body>
     <h1>exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
-        <p>
-            <label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome" minlength="5" maxlength="25">
-        </p>
-        <p>
-            <label for="imail">Cadastro de email</label>
-            <input type="email" name="email" id="imail" required autocomplete="email">
-
-        </p>
-        <label for="itel">Telefone</label>
-        <input type="tel" name="tel" id="itel" required 
-        pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" autocomplete="tel" placeholder="(99) 9999-9999">
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="25">
+            </p>
+            <p>
+                <label for="imail">Cadastro de email</label>
+                <input type="email" name="email" id="imail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required
+                pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" autocomplete="tel" placeholder="(99) 9999-9999">
+            </p>
+    </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Apagar">
